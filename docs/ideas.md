@@ -40,3 +40,17 @@ There's a few concerns here about how certain things should work:
 * Should functions be able to require other functions? Logic says yes, but implementation may be difficult
 * Should functions be able to have dependencies from NPM that they need? I almost want to say no, but logic says it should be possible.
 * Should functions be able to have more than one file? Logic says yes, but implementation says no
+
+
+---
+
+Possible implementations for the above questions:
+
+- Each function lives in their own folder. That is the whole repo is cloned into it's own folder to include as many files as needed
+- The `main` value of the `package.json` is used to instruct the `require` statement of `nfm`s `index.js` to require from the folder
+- Any dependencies found within the `package.json` are appended to the top level `package.json`
+- If a function depends on any other functions those are hoisted to the top level folder. Exposing them. Then the package itself will still have it's own `nfm` folder with an `index.js` that instead requires up rather than down.
+
+This does seem a lot like reinventing what NPM already does via `node_modules`. But while this is supported it could be largely frowned on as it defeats the whole purpose.
+
+Otherwise, some research can be done to determine, if functions within functions and with dependencies should outright just not be supported. Since really the whole point of this is simplicity.
