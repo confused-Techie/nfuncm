@@ -28,7 +28,7 @@ But this is easy enough to copy and paste and put into your code.
 
 But what if in this scenario, six months later the original author realizes there was a mistake and helpfully fixes it. Thing is, your code never gets that fix. And you likely would never know something has gone wrong.
 
-Using the "Node Function Manager" this regex can be exported as just that, regex, that can be continually updated, and easy for you to use, costing minimal network traffic, and more importantly minimual storage space.
+Using the "Node Function Manager" this regex can be exported as just that, regex, that can be continually updated, and easy for you to use, costing minimal network traffic, and more importantly minimal storage space.
 
 ## What this Solves
 
@@ -36,3 +36,10 @@ Using the "Node Function Manager" this regex can be exported as just that, regex
 * Authors for small snippets of code get to have their license respected, where many users don't realize that StackOverflow enforces a license at all.
 * Huge savings on disk space by not having to install a full module of half a dozen files for one simple needed function.
 * The simplicity of the interface removes the possibility of dependency hell.
+
+
+## Bonuses of NFM
+
+* NFM has **zero** dependencies!
+* NFM is only 12.9 kB unpacked!
+* NFM is unobtrusive, installed functions are small enough they can be included in your git repo, or docker image to avoid installation later

@@ -3,13 +3,12 @@
 const nfm = require("../src/index.js");
 
 async function main(params) {
-  console.log(params);
 
   if (typeof nfm[params[0]] === "function") {
     // The user has called for an actually function
-    let command = params.pop();
+    let command = params.shift();
 
-    let statusCode = nfm[command](params);
+    let statusCode = await nfm[command](params);
     process.exit(statusCode);
 
   } else {
@@ -20,4 +19,6 @@ async function main(params) {
 
 }
 
-main(process.argv.slice(2));
+(async () => {
+  await main(process.argv.slice(2));
+})();

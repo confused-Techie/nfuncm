@@ -1,7 +1,7 @@
 {
   "name": "nfuncm",
   "version": "1.0.0",
-  "description": "",
+  "description": "Node Function Manager: Share Functions not Modules",
   "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +9,10 @@
   "bin": {
     "nfm": "./bin/cli.js"
   },
-  "keywords": [],
+  "keywords": [
+    "nfuncm",
+    "nfm"
+  ],
   "author": "confused-Techie",
   "license": "MIT"
 }

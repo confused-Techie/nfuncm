@@ -54,3 +54,28 @@ Possible implementations for the above questions:
 This does seem a lot like reinventing what NPM already does via `node_modules`. But while this is supported it could be largely frowned on as it defeats the whole purpose.
 
 Otherwise, some research can be done to determine, if functions within functions and with dependencies should outright just not be supported. Since really the whole point of this is simplicity.
+
+---
+
+# Configuration
+
+The configuration of NFM should likely be stored within the `package.json` under the `nfm` key.
+
+The `nfm` key should contain the following properties:
+
+* `installed`: Lists all installed functions
+* `useHttp`: If for whatever reason someone has issues with certs, or proxies, they can set this to always use HTTP instead
+
+---
+
+Alright slight deviation:
+
+We have decided to disallow all dependencies, all dependency functions, everything.
+
+So why are we still supporting installing full directories??
+
+Maybe this should simply be download the file from a URL. During the install step the user assigns the name.
+
+Within the file itself, the author can add a license, and beyond that it's just code. Then we don't need loads of folders, it's just files. And the file itself takes the name of the installed item's name.
+
+Additionally, just having regular URLs means anybody can publish functions, isn't restricted to GitHub or anything, and furthermore no lock file. No fancy config
