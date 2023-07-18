@@ -28,7 +28,7 @@ But this is easy enough to copy and paste and put into your code.
 
 But what if in this scenario, six months later the original author realizes there was a mistake and helpfully fixes it. Thing is, your code never gets that fix. And you likely would never know something has gone wrong.
 
-Using the "Node Function Manager" this regex can be exported as just that, regex, that can be continually updated, and easy for you to use, costing minimal network traffic, and more importantly minimal storage space.
+Using NfuncM this regex can be exported as just that, regex, that can be continually updated, and easy for you to use, costing minimal network traffic, and more importantly minimal storage space.
 
 ## What this Solves
 
@@ -38,8 +38,8 @@ Using the "Node Function Manager" this regex can be exported as just that, regex
 * The simplicity of the interface removes the possibility of dependency hell.
 
 
-## Bonuses of NFM
+## Bonuses of NfuncM
 
-* NFM has **zero** dependencies!
-* NFM is only 12.9 kB unpacked!
-* NFM is unobtrusive, installed functions are small enough they can be included in your git repo, or docker image to avoid installation later
+* NfuncM has **zero** dependencies!
+* NfuncM is only 12.9 kB unpacked!
+* NfuncM is unobtrusive, installed functions are small enough they can be included in your git repo, or docker image to avoid installation later

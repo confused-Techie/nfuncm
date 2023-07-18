@@ -10,8 +10,7 @@
     "nfm": "./bin/cli.js"
   },
   "keywords": [
-    "nfuncm",
-    "nfm"
+    "nfuncm"
   ],
   "author": "confused-Techie",
   "license": "MIT"
